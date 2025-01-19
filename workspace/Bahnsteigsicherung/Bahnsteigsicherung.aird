@@ -1,20 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="_w_w58NZmEe-AprNCdnlqeg" selectedViews="_xo9A4NZmEe-AprNCdnlqeg _xq-aINZmEe-AprNCdnlqeg _xx_oINZmEe-AprNCdnlqeg _x2LkkNZmEe-AprNCdnlqeg _x3OGYNZmEe-AprNCdnlqeg" version="15.4.1.202403191723">
-  <semanticResources>Bahnsteigsicherung.afm</semanticResources>
-  <semanticResources>Bahnsteigsicherung.capella</semanticResources>
-  <ownedViews xmi:type="viewpoint:DView" uid="_xo9A4NZmEe-AprNCdnlqeg">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']"/>
-  </ownedViews>
-  <ownedViews xmi:type="viewpoint:DView" uid="_xq-aINZmEe-AprNCdnlqeg">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']"/>
-  </ownedViews>
-  <ownedViews xmi:type="viewpoint:DView" uid="_xx_oINZmEe-AprNCdnlqeg">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']"/>
-  </ownedViews>
-  <ownedViews xmi:type="viewpoint:DView" uid="_x2LkkNZmEe-AprNCdnlqeg">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']"/>
-  </ownedViews>
-  <ownedViews xmi:type="viewpoint:DView" uid="_x3OGYNZmEe-AprNCdnlqeg">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']"/>
-  </ownedViews>
-</viewpoint:DAnalysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/7.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/filter/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_w_w58NZmEe-AprNCdnlqeg" selectedViews="_xo9A4NZmEe-AprNCdnlqeg _xq-aINZmEe-AprNCdnlqeg _xx_oINZmEe-AprNCdnlqeg _x2LkkNZmEe-AprNCdnlqeg _x3OGYNZmEe-AprNCdnlqeg" version="15.4.1.202403191723">
+    <semanticResources>Bahnsteigsicherung.afm</semanticResources>
+    <semanticResources>Bahnsteigsicherung.capella</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_xo9A4NZmEe-AprNCdnlqeg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_xq-aINZmEe-AprNCdnlqeg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_UWpyMNZrEe-4cdC4VGyWVA" name="[OEBD] Operational Entities" repPath="#_UV7ZcNZrEe-4cdC4VGyWVA" changeId="1737294202959">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']"/>
+        <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="Bahnsteigsicherung.capella#bfda145d-e6a6-4822-ac2c-c73cc874d607"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_xx_oINZmEe-AprNCdnlqeg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_x2LkkNZmEe-AprNCdnlqeg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_x3OGYNZmEe-AprNCdnlqeg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']"/>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_UV7ZcNZrEe-4cdC4VGyWVA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_UXVHoNZrEe-4cdC4VGyWVA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_UXVHodZrEe-4cdC4VGyWVA" type="Sirius" element="_UV7ZcNZrEe-4cdC4VGyWVA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_VmcmINZrEe-4cdC4VGyWVA" type="2001" element="_Vl07ENZrEe-4cdC4VGyWVA">
+          <children xmi:type="notation:Node" xmi:id="_VmheoNZrEe-4cdC4VGyWVA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_VmiFsNZrEe-4cdC4VGyWVA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_VmoMUNZrEe-4cdC4VGyWVA" type="3003" element="_VmDkkNZrEe-4cdC4VGyWVA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_VmoMUdZrEe-4cdC4VGyWVA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VmoMUtZrEe-4cdC4VGyWVA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_VmcmIdZrEe-4cdC4VGyWVA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VmcmItZrEe-4cdC4VGyWVA" x="340" y="200"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_UXVHotZrEe-4cdC4VGyWVA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_UX7kkNZrEe-4cdC4VGyWVA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_UX8ysNZrEe-4cdC4VGyWVA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Vl07ENZrEe-4cdC4VGyWVA" name="Test" width="7" height="7" resizeKind="NSEW">
+      <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Bahnsteigsicherung.capella#c195498d-73a7-48d8-841d-0e160fe1d749"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Bahnsteigsicherung.capella#c195498d-73a7-48d8-841d-0e160fe1d749"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_VmDkkNZrEe-4cdC4VGyWVA" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" width="-1" height="-1" color="221,221,200">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']"/>
+    <activatedFilters xmi:type="filter:CompositeFilterDescription" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']/@ownedRepresentations[name='AD%20diagram']/@filters[name='ModelExtensionFilter']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_UWOUYNZrEe-4cdC4VGyWVA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer"/>
+    <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="Bahnsteigsicherung.capella#bfda145d-e6a6-4822-ac2c-c73cc874d607"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

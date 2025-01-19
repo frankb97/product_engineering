@@ -54,7 +54,12 @@
       <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="6c0cd04e-2cfa-4317-b305-8b25d743c589"
           name="Roles"/>
       <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="bfda145d-e6a6-4822-ac2c-c73cc874d607"
-          name="Operational Entities"/>
+          name="Operational Entities">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="80704b7a-01d8-4c96-bae5-d6623ced19e6"
+            name="Test" abstractType="#c195498d-73a7-48d8-841d-0e160fe1d749"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c195498d-73a7-48d8-841d-0e160fe1d749"
+            name="Test"/>
+      </ownedEntityPkg>
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
         id="646009c2-6e00-4224-9408-bfef4a1a01d8" name="System Analysis">
