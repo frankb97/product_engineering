@@ -45,6 +45,16 @@
           id="39290607-ea82-49c4-801d-c6b8dccf38de" name="Operational Activities">
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
             id="6eb87f4d-5392-4efe-8863-b146a93e68ec" name="Root Operational Activity">
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="e66e3804-705a-426f-9b2c-b8704f3b8ad6" name="OperationalProcess 1">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="0723c507-edc1-4925-ace9-0c8270762148" involved="#3c21fe69-9897-4b80-a734-ff95daaabbb6"
+                source="#3dd15ad2-1258-4f30-aaed-1bac4c4f845f" target="#3886f013-296b-4fe3-b4b4-37b97cbfab87"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="3886f013-296b-4fe3-b4b4-37b97cbfab87" involved="#ce7e047a-bfb5-4dc4-bd99-c3113e73f8b6"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="3dd15ad2-1258-4f30-aaed-1bac4c4f845f" involved="#aa3e642e-79fc-431f-8276-47ba9da33934"/>
+          </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="847d028b-29c2-40ea-8646-9478045758af" name="Überschreitet Sicherheitslinie"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
