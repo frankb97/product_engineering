@@ -56,9 +56,42 @@
       <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="bfda145d-e6a6-4822-ac2c-c73cc874d607"
           name="Operational Entities">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="80704b7a-01d8-4c96-bae5-d6623ced19e6"
-            name="Test" abstractType="#c195498d-73a7-48d8-841d-0e160fe1d749"/>
+            name="Bahnüberwachung" abstractType="#c195498d-73a7-48d8-841d-0e160fe1d749"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="93e26288-b82c-47c5-b48b-c668d0bf763d"
+            name="Bahnbetreiber" abstractType="#f08a0152-537d-4102-bee6-20a11dd6db59"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2cabf5b0-c993-4bb1-924a-054e7138d9d7"
+            name="Fahrgast" abstractType="#597f1c92-efea-44a2-a095-3cef85b63698"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="c4623846-8d21-4919-bf15-e542f302089e"
+            name="Wartungspersonal" abstractType="#b73d25f8-abc5-4846-b19b-7458bdb14178"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="91589b9c-4ef2-4ab5-af9e-9a35c5cb6671"
+            name="Sicherheitsbehörde" abstractType="#2f0fbe2a-1257-4661-8018-e33c6275e998"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="91dbb6fb-a057-43ea-a9fe-bd6663ce06d1"
+            name="IT-Facharbeiter" abstractType="#6f9fa7f3-aaa5-4562-b344-882fdc8b5dd4"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="39394c31-8ee6-4de4-9dcd-6c5b714bec1b"
+            name="Fahrzeugführer" abstractType="#057a2a72-f89c-40b6-9c9d-4e1d2d6fcdf4"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="5ff81a37-ab6c-493b-80e4-d824d38aaeb6"
+            name="Stadt" abstractType="#9207a5b2-ffce-497d-a700-c60296ea8f9d"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c195498d-73a7-48d8-841d-0e160fe1d749"
-            name="Test"/>
+            name="Bahnüberwachung">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b1f77ee4-def0-46bd-bcb2-e25ac29a51b2"
+              name="Bahnüberwachungssystem" abstractType="#b2b5b465-38c0-4ca7-8e4b-800135ae23e2"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="b2b5b465-38c0-4ca7-8e4b-800135ae23e2"
+              name="Bahnüberwachungssystem"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="f08a0152-537d-4102-bee6-20a11dd6db59"
+            name="Bahnbetreiber" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="597f1c92-efea-44a2-a095-3cef85b63698"
+            name="Fahrgast" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="b73d25f8-abc5-4846-b19b-7458bdb14178"
+            name="Wartungspersonal" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="2f0fbe2a-1257-4661-8018-e33c6275e998"
+            name="Sicherheitsbehörde" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="6f9fa7f3-aaa5-4562-b344-882fdc8b5dd4"
+            name="IT-Facharbeiter" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="057a2a72-f89c-40b6-9c9d-4e1d2d6fcdf4"
+            name="Fahrzeugführer" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="9207a5b2-ffce-497d-a700-c60296ea8f9d"
+            name="Stadt" actor="true" human="true"/>
       </ownedEntityPkg>
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
