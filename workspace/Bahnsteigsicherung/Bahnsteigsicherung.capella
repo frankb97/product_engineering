@@ -2611,6 +2611,12 @@
                 id="625b0b2b-fa18-48c5-9d1e-d11f18ca5169" start="#affc05ed-baa0-4e87-85be-95ba93eeb2fa"
                 finish="#ec0bcce9-4ecf-40f2-a8d8-4b2c47f8476f" relatedAbstractFunction="#5b6f3998-0a8a-42a2-bdb5-79bc8f75c72f"/>
           </ownedScenarios>
+          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
+              id="bb0149d5-5ced-4b37-b5ff-c6d275093f24" name="[ES] Erkennung der Sicherheitslinie Szenario"
+              kind="DATA_FLOW">
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="a51385b0-e899-463b-bf41-f7cab9b7675d" name="System" representedInstance="#f4e4dddf-9660-41ef-b719-ee9de977173b"/>
+          </ownedScenarios>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="7999b823-f26e-44d8-8d9a-7c6765d86b82" involved="#b64f328e-45f1-460c-9e72-51b810320e86"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
