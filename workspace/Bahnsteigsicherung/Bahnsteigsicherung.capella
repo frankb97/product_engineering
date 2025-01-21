@@ -2696,6 +2696,12 @@
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="c5f75702-7f17-4408-99f9-cd4abfb1f814" name="Verarbeitung der Umweltbedingungen">
+          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
+              id="b9d1d091-837e-49b7-9a02-00f15ecba07c" name="[ES] Verarbeitung der Umweltbedingungen Szenario"
+              kind="DATA_FLOW">
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="20dca823-31a5-4111-8be5-eed7cfdb5a18" name="System" representedInstance="#f4e4dddf-9660-41ef-b719-ee9de977173b"/>
+          </ownedScenarios>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="845081fd-10cd-4609-8eb1-7e59cb223b61" involved="#b64f328e-45f1-460c-9e72-51b810320e86"/>
         </ownedCapabilities>

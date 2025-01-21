@@ -79,6 +79,10 @@
         <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']"/>
         <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="Bahnsteigsicherung.capella#69c1fb05-078e-4381-a512-04cec53abe7a"/>
       </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_biuBENf8Ee-NjdjRiUVIuQ" name="[ES] Verarbeitung der Umweltbedingungen Szenario" repPath="#_bh0pMNf8Ee-NjdjRiUVIuQ" changeId="1737466469899">
+        <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']"/>
+        <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="Bahnsteigsicherung.capella#b9d1d091-837e-49b7-9a02-00f15ecba07c"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_x2LkkNZmEe-AprNCdnlqeg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']"/>
@@ -20311,5 +20315,84 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_aK_rENf6Ee-EvbFdFYX5cA"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer"/>
     <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="Bahnsteigsicherung.capella#69c1fb05-078e-4381-a512-04cec53abe7a"/>
+  </sequence:SequenceDDiagram>
+  <sequence:SequenceDDiagram uid="_bh0pMNf8Ee-NjdjRiUVIuQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_bjonENf8Ee-NjdjRiUVIuQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_bjonEdf8Ee-NjdjRiUVIuQ" type="Sirius" element="_bh0pMNf8Ee-NjdjRiUVIuQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_bldzENf8Ee-NjdjRiUVIuQ" type="2001" element="_bkPrENf8Ee-NjdjRiUVIuQ">
+          <children xmi:type="notation:Node" xmi:id="_blmV8Nf8Ee-NjdjRiUVIuQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_blmV8df8Ee-NjdjRiUVIuQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bl1mgNf8Ee-NjdjRiUVIuQ" type="3001" element="_bks-ENf8Ee-NjdjRiUVIuQ">
+            <children xmi:type="notation:Node" xmi:id="_bl2NkNf8Ee-NjdjRiUVIuQ" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_bl2Nkdf8Ee-NjdjRiUVIuQ" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_bmAloNf8Ee-NjdjRiUVIuQ" type="3003" element="_bkuzQNf8Ee-NjdjRiUVIuQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_bmAlodf8Ee-NjdjRiUVIuQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bmAlotf8Ee-NjdjRiUVIuQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_bmBMsNf8Ee-NjdjRiUVIuQ" type="3001" element="_bk5yYNf8Ee-NjdjRiUVIuQ">
+              <children xmi:type="notation:Node" xmi:id="_bmBMs9f8Ee-NjdjRiUVIuQ" type="5001">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_bmBMtNf8Ee-NjdjRiUVIuQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_brm3UNf8Ee-NjdjRiUVIuQ" type="3005" element="_bk5yYdf8Ee-NjdjRiUVIuQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_brm3Udf8Ee-NjdjRiUVIuQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_brm3Utf8Ee-NjdjRiUVIuQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_bmBMsdf8Ee-NjdjRiUVIuQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bmBMstf8Ee-NjdjRiUVIuQ" x="-68" y="395" width="10" height="10"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_bl1mgdf8Ee-NjdjRiUVIuQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bl1mgtf8Ee-NjdjRiUVIuQ" y="42" width="10" height="395"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bl_-kNf8Ee-NjdjRiUVIuQ" type="3003" element="_bkcfYNf8Ee-NjdjRiUVIuQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_bl_-kdf8Ee-NjdjRiUVIuQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bl_-ktf8Ee-NjdjRiUVIuQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bldzEdf8Ee-NjdjRiUVIuQ" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bldzEtf8Ee-NjdjRiUVIuQ" x="50" y="50" width="150" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_bjonEtf8Ee-NjdjRiUVIuQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_blMGQNf8Ee-NjdjRiUVIuQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_blMGQdf8Ee-NjdjRiUVIuQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_bkPrENf8Ee-NjdjRiUVIuQ" name="System" width="15" height="5" resizeKind="EAST_WEST">
+      <target xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Bahnsteigsicherung.capella#20dca823-31a5-4111-8be5-eed7cfdb5a18"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Bahnsteigsicherung.capella#20dca823-31a5-4111-8be5-eed7cfdb5a18"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Bahnsteigsicherung.capella#f4e4dddf-9660-41ef-b719-ee9de977173b"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemComponent" href="Bahnsteigsicherung.capella#b64f328e-45f1-460c-9e72-51b810320e86"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_cDi2MNf8Ee-NjdjRiUVIuQ" x="50" y="50" height="50" width="150"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_bks-ENf8Ee-NjdjRiUVIuQ" width="1" height="40" resizeKind="NSEW">
+        <target xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Bahnsteigsicherung.capella#20dca823-31a5-4111-8be5-eed7cfdb5a18"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Bahnsteigsicherung.capella#20dca823-31a5-4111-8be5-eed7cfdb5a18"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Bahnsteigsicherung.capella#f4e4dddf-9660-41ef-b719-ee9de977173b"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemComponent" href="Bahnsteigsicherung.capella#b64f328e-45f1-460c-9e72-51b810320e86"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_bk5yYNf8Ee-NjdjRiUVIuQ" width="1" height="1">
+          <target xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Bahnsteigsicherung.capella#20dca823-31a5-4111-8be5-eed7cfdb5a18"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Bahnsteigsicherung.capella#20dca823-31a5-4111-8be5-eed7cfdb5a18"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Bahnsteigsicherung.capella#f4e4dddf-9660-41ef-b719-ee9de977173b"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemComponent" href="Bahnsteigsicherung.capella#b64f328e-45f1-460c-9e72-51b810320e86"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_bk5yYdf8Ee-NjdjRiUVIuQ" showIcon="false" labelPosition="node" workspacePath="/org.polarsys.capella.core.sirius.analysis/description/images/handlelifeline.svg">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='endOfLifeDF']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:EndOfLifeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='endOfLifeDF']"/>
+        </ownedBorderedNodes>
+        <ownedStyle xmi:type="diagram:Square" uid="_bkuzQNf8Ee-NjdjRiUVIuQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="128,128,128" labelPosition="node" width="1" height="40">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:Square" uid="_bkcfYNf8Ee-NjdjRiUVIuQ" borderSize="1" borderSizeComputationExpression="1" borderColor="74,74,151" labelPosition="node" width="15" height="5" color="150,177,218">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@conditionnalStyles.4/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']"/>
+    <activatedFilters xmi:type="filter:CompositeFilterDescription" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']/@ownedRepresentations[name='AD%20diagram']/@filters[name='ModelExtensionFilter']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_biZQ8Nf8Ee-NjdjRiUVIuQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer"/>
+    <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="Bahnsteigsicherung.capella#b9d1d091-837e-49b7-9a02-00f15ecba07c"/>
   </sequence:SequenceDDiagram>
 </xmi:XMI>
