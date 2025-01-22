@@ -2946,12 +2946,6 @@
             <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEvent"
                 id="5da39618-93e8-4bfc-ac92-9eb70bed7a42"/>
           </ownedScenarios>
-          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
-              id="bb0149d5-5ced-4b37-b5ff-c6d275093f24" name="[ES] Erkennung der Sicherheitslinie Szenario"
-              kind="DATA_FLOW">
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="a51385b0-e899-463b-bf41-f7cab9b7675d" name="System" representedInstance="#f4e4dddf-9660-41ef-b719-ee9de977173b"/>
-          </ownedScenarios>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="7999b823-f26e-44d8-8d9a-7c6765d86b82" involved="#b64f328e-45f1-460c-9e72-51b810320e86"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
@@ -2967,57 +2961,6 @@
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="af5287e2-e992-497c-8dff-7d930ffe5279" name="Einbeziehung des Sicherheitspersonals">
-          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
-              id="fdba5d63-be88-4d4e-bf4a-65b1d5ff75d1" name="[ES] Einbeziehung des Sicherheitspersonals Szenario"
-              kind="DATA_FLOW">
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="dcb7ccbb-7c44-4022-b85d-c427b7698774" name="System" representedInstance="#f4e4dddf-9660-41ef-b719-ee9de977173b"/>
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="42b3829d-3848-45f6-af05-fa16a0ace26e" name="Sicherheitsbehörde"
-                representedInstance="#5067d2ce-7394-4766-8a1e-ca1b8e1fa2b5"/>
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="a9cb8cc8-bbfd-4344-ba6e-a85d139818e7" name="Fahrgast" representedInstance="#1390ba95-4773-4333-ad42-8f87f85ad036"/>
-            <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="3c48d2e8-4b42-4713-a686-46bb24c7f092" name="Kontrolliert Sicherheitslinie"
-                kind="ASYNCHRONOUS_CALL" sendingEnd="#4c7ac4de-d2d9-4aff-9afa-cd02d2a5986d"
-                receivingEnd="#bd2f4305-6563-42ad-9ab6-82cba4e5fc3e"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="7527f6b5-e5b1-45ac-b917-39e2b931e0ff" name="Erkennt Sicherheitslinie"
-                coveredInstanceRoles="#dcb7ccbb-7c44-4022-b85d-c427b7698774" relatedAbstractFunction="#5d3d56ed-e40f-4024-83fd-e11787495839"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="1d07a51c-dae8-4d27-b435-508bdb428755" name="Erkennt Sicherheitslinie"
-                coveredInstanceRoles="#dcb7ccbb-7c44-4022-b85d-c427b7698774" relatedAbstractFunction="#5d3d56ed-e40f-4024-83fd-e11787495839"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
-                id="4c7ac4de-d2d9-4aff-9afa-cd02d2a5986d" name="Send Call Message Call"
-                coveredInstanceRoles="#dcb7ccbb-7c44-4022-b85d-c427b7698774" event="#737284c0-c392-45af-96f1-8f8ffa75539e"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
-                id="bd2f4305-6563-42ad-9ab6-82cba4e5fc3e" name="Receive Call Message Call"
-                coveredInstanceRoles="#a9cb8cc8-bbfd-4344-ba6e-a85d139818e7" event="#4f38492d-c5ae-4438-adeb-385f6499c383"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="847bdaa0-43bd-4b66-ae58-fd827f29ce7c" name="Überschreitet Sicherheitslinie"
-                coveredInstanceRoles="#a9cb8cc8-bbfd-4344-ba6e-a85d139818e7" relatedAbstractFunction="#5b6f3998-0a8a-42a2-bdb5-79bc8f75c72f"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="c595cfff-48a8-4a1f-9e7a-e54dc84670cd" name="Überschreitet Sicherheitslinie"
-                coveredInstanceRoles="#a9cb8cc8-bbfd-4344-ba6e-a85d139818e7" relatedAbstractFunction="#5b6f3998-0a8a-42a2-bdb5-79bc8f75c72f"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
-                id="bc3c0c5a-cce1-43bb-815e-208373fdfa2c" name="endExec" coveredInstanceRoles="#a9cb8cc8-bbfd-4344-ba6e-a85d139818e7"
-                event="#b5606cf7-4f9a-4ac0-a464-b4e9c474c576"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="5d7341a9-b8b5-40fc-bab7-44f1aa001127" start="#7527f6b5-e5b1-45ac-b917-39e2b931e0ff"
-                finish="#1d07a51c-dae8-4d27-b435-508bdb428755" relatedAbstractFunction="#5d3d56ed-e40f-4024-83fd-e11787495839"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:Execution"
-                id="f1ccd0b0-81c5-4c3f-b5e3-5a17ac8c3ef5" start="#bd2f4305-6563-42ad-9ab6-82cba4e5fc3e"
-                finish="#bc3c0c5a-cce1-43bb-815e-208373fdfa2c"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="7ada07bf-8cc2-4c20-92c5-593075c76d5d" start="#847bdaa0-43bd-4b66-ae58-fd827f29ce7c"
-                finish="#c595cfff-48a8-4a1f-9e7a-e54dc84670cd" relatedAbstractFunction="#5b6f3998-0a8a-42a2-bdb5-79bc8f75c72f"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:EventSentOperation"
-                id="737284c0-c392-45af-96f1-8f8ffa75539e" operation="#a5b4780e-a24d-4a1f-a0c8-b17c5de1ca2f"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:EventReceiptOperation"
-                id="4f38492d-c5ae-4438-adeb-385f6499c383" operation="#a5b4780e-a24d-4a1f-a0c8-b17c5de1ca2f"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEvent"
-                id="b5606cf7-4f9a-4ac0-a464-b4e9c474c576"/>
-          </ownedScenarios>
           <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
               id="c0fe019f-43a9-41fe-a1a1-17d418651c6f" name="[ES] Einbeziehung des Sicherheitspersonals Szenario"
               kind="DATA_FLOW">
@@ -4616,12 +4559,6 @@
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="c5f75702-7f17-4408-99f9-cd4abfb1f814" name="Verarbeitung der Umweltbedingungen">
-          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
-              id="b9d1d091-837e-49b7-9a02-00f15ecba07c" name="[ES] Verarbeitung der Umweltbedingungen Szenario"
-              kind="DATA_FLOW">
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="20dca823-31a5-4111-8be5-eed7cfdb5a18" name="System" representedInstance="#f4e4dddf-9660-41ef-b719-ee9de977173b"/>
-          </ownedScenarios>
           <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
               id="e6565d21-3a7b-450b-aa94-d538803d676e" name="[ES] Verarbeitung der Umweltbedingungen Szenario"
               kind="DATA_FLOW">
