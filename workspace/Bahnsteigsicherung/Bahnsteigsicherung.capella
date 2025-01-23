@@ -2574,7 +2574,7 @@
                 id="7e1e798a-9560-4087-9909-bc91b4dccbd7" name="System getriggert"
                 target="#92e40491-19d5-414c-864b-0e732a690b11" source="#cb80042f-6aec-4205-8f11-16b4cdc05018"/>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="a77c6696-5d69-4121-8727-2616e6684e29" name="Warscheinlichkeitsberechnung"
+                id="a77c6696-5d69-4121-8727-2616e6684e29" name="Warscheinlichkeitsberechnung anhand der Traniningsdaten durchführen"
                 target="#de6febd8-a5fc-420e-9203-0a400bdba1bd" source="#fe519781-0526-4048-9130-e57c43d3ff12"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
@@ -2686,14 +2686,14 @@
                 sourceElement="#dbfc0ebe-1173-4eec-ba8b-cf5cbdf477a2"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="a60b63eb-796c-436d-ab13-cace2ac130cc" name="Weitereichen" target="#9b98b086-006f-4a47-a8b9-8ddd3e247fe2"
-              source="#82550e54-b74d-4a49-930e-1dfb2f2c42be">
+              id="a60b63eb-796c-436d-ab13-cace2ac130cc" name="Weitereichen aufbereiteten Daten"
+              target="#9b98b086-006f-4a47-a8b9-8ddd3e247fe2" source="#82550e54-b74d-4a49-930e-1dfb2f2c42be">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="efd701cc-3df0-4cac-a417-9fe2122027e0" targetElement="#e23156ee-500c-437f-a4a5-5eca54f43ea9"
                 sourceElement="#a60b63eb-796c-436d-ab13-cace2ac130cc"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="dd892dc1-cc7b-4588-96f0-b88042a7da59" name="Über gefahrensituationen Informieren"
+              id="dd892dc1-cc7b-4588-96f0-b88042a7da59" name="Über die Gefahrensituationen Informieren"
               target="#3b8099b1-71f4-4a47-9f4a-0aa3c31edc74" source="#6697c52a-b33b-4cb6-8f85-01613f20b53e">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="f1802405-8858-45ff-b3e7-f6f8f614415a" targetElement="#473798f7-b92c-4c9e-85a7-8e56871ac076"
@@ -4126,7 +4126,7 @@
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
                 id="70e4d844-76e6-4241-966b-733a7c5aef5d" name="Bahnbetreiber" representedInstance="#023486fc-72aa-4b3a-b72b-bc3e1df064c1"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="410a9128-33b1-499c-bce2-0df43978d4e9" name="Warscheinlichkeitsberechnung"
+                id="410a9128-33b1-499c-bce2-0df43978d4e9" name="Warscheinlichkeitsberechnung anhand der Traniningsdaten durchführen"
                 kind="ASYNCHRONOUS_CALL" sendingEnd="#56561a4d-c951-41eb-a9dc-308140f83be8"
                 receivingEnd="#50621c88-d7fb-4f68-93e2-67ec5537a928"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
@@ -4134,12 +4134,13 @@
                 kind="ASYNCHRONOUS_CALL" sendingEnd="#064987da-0e15-4164-948d-154afa2a3227"
                 receivingEnd="#be5103b9-2d5c-46a1-9b1c-66a08463667f"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="ed332c8d-1ede-4c2d-8b7d-a86b8ddbd5dd" name="Über gefahrensituationen Informieren"
+                id="ed332c8d-1ede-4c2d-8b7d-a86b8ddbd5dd" name="Über die Gefahrensituationen Informieren"
                 kind="ASYNCHRONOUS_CALL" sendingEnd="#d0d2b8bd-1548-4e1f-95f7-abf5ad174690"
                 receivingEnd="#7fe14bdf-5391-4a16-8b39-301fd8af9b89"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="1512034a-9e4b-49aa-b4b2-bb27f013238c" name="Weitereichen" kind="ASYNCHRONOUS_CALL"
-                sendingEnd="#1e434402-2195-4e27-8c18-482432802937" receivingEnd="#8a9421d4-59e4-4789-a9b1-6007bb38eed6"/>
+                id="1512034a-9e4b-49aa-b4b2-bb27f013238c" name="Weitereichen aufbereiteten Daten"
+                kind="ASYNCHRONOUS_CALL" sendingEnd="#1e434402-2195-4e27-8c18-482432802937"
+                receivingEnd="#8a9421d4-59e4-4789-a9b1-6007bb38eed6"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
                 id="a34a848f-8720-46c4-815a-4272cfa5a75a" name="Daten zur Verfügung stellen"
                 kind="ASYNCHRONOUS_CALL" sendingEnd="#732d43fc-76c0-49ff-bc87-8bb7c15f9908"
@@ -4310,7 +4311,7 @@
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
                 id="5a19828e-3152-4d8f-8fe1-e89014a42690" name="Bahnbetreiber" representedInstance="#023486fc-72aa-4b3a-b72b-bc3e1df064c1"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="41c1fb13-9ab3-472c-84e3-1baa086c9731" name="Warscheinlichkeitsberechnung"
+                id="41c1fb13-9ab3-472c-84e3-1baa086c9731" name="Warscheinlichkeitsberechnung anhand der Traniningsdaten durchführen"
                 kind="ASYNCHRONOUS_CALL" sendingEnd="#6cf28c66-c75f-4807-bc32-0b50c467ad4d"
                 receivingEnd="#44e73a4a-eb29-4b8f-a81d-b3bf7e4451e1"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
@@ -4318,7 +4319,7 @@
                 kind="ASYNCHRONOUS_CALL" sendingEnd="#fa64b832-aad0-429e-a095-d1c459130ccf"
                 receivingEnd="#c845fc44-8a2c-4973-9b38-106ff2fdb541"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="d0a597d6-06bf-4645-9944-a959169389f2" name="Über gefahrensituationen Informieren"
+                id="d0a597d6-06bf-4645-9944-a959169389f2" name="Über die Gefahrensituationen Informieren"
                 kind="ASYNCHRONOUS_CALL" sendingEnd="#a25c0b97-89d4-4e39-983a-9bc2b3c0eb74"
                 receivingEnd="#c23ac977-982c-4e58-b2f3-3713cf5f9997"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
@@ -4339,15 +4340,15 @@
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="fca51192-bb4e-4e44-80c0-8921f0f0f552" name="Gefahrerkennung" coveredInstanceRoles="#6ab3bc08-5f7d-4449-a2f1-f1eec5ce6f15"
                 relatedAbstractFunction="#81f5024c-4489-48e2-83a2-745cbce33a7e"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
-                id="150f276f-288c-4df3-9df7-93e83db1614c" name="endExec" coveredInstanceRoles="#6ab3bc08-5f7d-4449-a2f1-f1eec5ce6f15"
-                event="#4593260a-73c9-49ca-bf91-1618594b19ea"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
                 id="fa64b832-aad0-429e-a095-d1c459130ccf" name="Send Call Message Call"
                 coveredInstanceRoles="#6ab3bc08-5f7d-4449-a2f1-f1eec5ce6f15" event="#7e782a5d-41a8-4ab4-ba96-7bf6e5275257"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
                 id="c845fc44-8a2c-4973-9b38-106ff2fdb541" name="Receive Call Message Call"
                 coveredInstanceRoles="#c635f627-6461-4711-9989-e79a412fbe19" event="#bcb95829-8ffd-4d66-85b9-50a89cb3d9d9"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
+                id="150f276f-288c-4df3-9df7-93e83db1614c" name="endExec" coveredInstanceRoles="#6ab3bc08-5f7d-4449-a2f1-f1eec5ce6f15"
+                event="#4593260a-73c9-49ca-bf91-1618594b19ea"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="805284aa-8a2f-4572-856e-cb62467ef0ae" name="Verfügbarkeitsprüfung"
                 coveredInstanceRoles="#c635f627-6461-4711-9989-e79a412fbe19" relatedAbstractFunction="#01273b9b-a3fd-44f9-92ec-5b9c4fc84e2f"/>
@@ -5096,7 +5097,8 @@
               sourceElement="#5ee7736a-1e12-4a99-9de9-a54428df941a"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="053cde5b-b839-4b4b-a6dc-09cdd5dd3025" name="Fahrgast" actor="true">
+            id="053cde5b-b839-4b4b-a6dc-09cdd5dd3025" name="Fahrgast" actor="true"
+            human="true">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="5fe52406-6557-4520-a855-e444996946fc" targetElement="#068355f2-9998-45df-a8e7-60ae0f714343"
               sourceElement="#0b03b42a-57c5-4aac-9b7c-4035b2c4b74a"/>
