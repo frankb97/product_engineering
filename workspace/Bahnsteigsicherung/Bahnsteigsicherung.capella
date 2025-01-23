@@ -7441,7 +7441,7 @@
             id="30c0fec4-8dc5-4f87-92dd-919b4974cd73" targetElement="#023486fc-72aa-4b3a-b72b-bc3e1df064c1"
             sourceElement="#39ee1232-4594-4ac8-82c6-892659704e41"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="00f8c8de-92ac-4b6e-a740-62fede58661f"
-            name="Logical System" abstractType="#07a3ded0-847d-4a5f-b897-d8e360ce5eaf"/>
+            name="Bahnsteigsicherungsystem" abstractType="#07a3ded0-847d-4a5f-b897-d8e360ce5eaf"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="aa5e5bb3-e265-49e2-9bc1-50771c7e759d"
             name="Bahnüberwachungssystem" abstractType="#3f81c097-eb43-456c-9cf4-3ee4928fcba2"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="6924cfd7-9e8b-4bd4-b085-71ea59d2ddc5"
@@ -7461,7 +7461,7 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="39ee1232-4594-4ac8-82c6-892659704e41"
             name="Bahnbetreiber" abstractType="#bd78e319-3b10-4468-8438-dcfc5654adaf"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="07a3ded0-847d-4a5f-b897-d8e360ce5eaf" name="Logical System">
+            id="07a3ded0-847d-4a5f-b897-d8e360ce5eaf" name="Bahnsteigsicherungsystem">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="27677b7f-864a-4620-9b61-b86475152238"
               name="Energieversorgung" abstractType="#08ef6ee0-b366-41da-abbc-488f0e8c7708"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8895e706-869b-4b57-8e21-88c8a6648b72"
