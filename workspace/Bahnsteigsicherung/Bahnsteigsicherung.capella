@@ -6983,7 +6983,7 @@
                 id="25b95c4e-8e4e-4b50-b7b2-147ca9ab35d3" targetElement="#312fbec0-ac92-4a4e-8a00-29e30a5ab904"
                 sourceElement="#620c08a2-0219-493c-a224-38bb05fdfdde"/>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="fd332fb8-9626-47c7-85e7-9ce4236c961b" name="System getriggert"
+                id="fd332fb8-9626-47c7-85e7-9ce4236c961b" name="System erhält Ereignisdaten"
                 target="#c36b7a23-af2d-46c9-8615-ac3faac42236" source="#a1d9bdf9-f956-41a1-92bd-475191de1f2e">
               <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                   id="71963352-4c1b-4186-9eaa-3c5340bc6640" targetElement="#7e1e798a-9560-4087-9909-bc91b4dccbd7"
@@ -7347,7 +7347,7 @@
                 sourceElement="#7dd6cb1d-1c6e-4ab6-8c0d-8d80b32aec92"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="036f3346-0050-4768-8c4a-b5464478d6fa" name="Verarbeitete Statistikinformationen weiterleiten"
+              id="036f3346-0050-4768-8c4a-b5464478d6fa" name="Verarbeitete Statistikinformationen über Gefahren Früherkennungen weiterleiten"
               target="#50229e2c-c536-4f15-a77c-f82859be87c9" source="#afe736dc-ac7e-44e2-8193-0ac973b3f378">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="d308ed91-908c-4bd0-aeb1-4a76c10ab28b" targetElement="#49060a50-01f3-4211-bffb-f5b0c1aa30a6"
@@ -7754,7 +7754,7 @@
               id="a3e6123a-2b76-4a58-bd65-ddde853cb3ea" name="Daten abspeichern" target="#2dd9daf1-85cc-4854-a4fb-2b13dd019cde"
               source="#c9f50f5c-0c5a-4cde-bd5a-c193559f82ec"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="e9471370-bb25-42b3-a2f6-c1c13834c558" name="Weiterleitung der Statistikinformationen über Fehler "
+              id="e9471370-bb25-42b3-a2f6-c1c13834c558" name="Weiterleitung der Statistikinformationen über Komponentenfehler"
               target="#7b9f2c0e-f2eb-4027-ab8d-be6ef071a0e7" source="#c82b66f6-4dc8-49b4-bbbf-e45b007d56b2"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="aa4b1aae-515b-4958-b423-abfa17cc66ec" name="Weiterleitung der Verarbeiteten Statistikinformationen über Fehler "
@@ -8158,7 +8158,24 @@
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="381731ed-0ddd-43a5-849a-9f5372374392" name="Interfaces"/>
       <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
-          id="59c12918-58da-4fa8-8a3d-53d812ee414d" name="Data"/>
+          id="59c12918-58da-4fa8-8a3d-53d812ee414d" name="Data">
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="2cad4f21-b907-4f68-b0eb-6aabb0af84ea" name="Zustandsprotokoll übersenden"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="9f6f39d2-3148-444b-a68b-5e2525c6bb2f" name="Kein Fehler erkannt"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="a5c5f6ed-534d-46df-a847-7d3a208ad4be" name="Fehler erkannt"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="d37a46f5-86df-4763-b466-79df1129f78c" name="Neue Verordunungen vorhanden"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="dcb92598-d6ec-4d7e-8273-922d3be73b3e" name="Komponenten ausfall erkannt"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="0c0bb7fa-37f7-4391-a82e-6bb79fcaac2f" name="Keinen Komponenten ausfall erkannt"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="6e9f4ba0-704f-4341-b068-3c8804291237" name="Keine Überschreitung der Sicherheitszone erfasst"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="1d9a5b4f-41db-48b2-8b1a-e95fa35709af" name="Überschreitung der Sicherheitszone erfasst"/>
+      </ownedDataPkg>
       <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
           id="84ad18c5-af61-4d4e-959c-a3d39b567fc7" name="Structure">
         <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
@@ -8210,6 +8227,217 @@
             name="Bahnbetreiber" abstractType="#bd78e319-3b10-4468-8438-dcfc5654adaf"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="07a3ded0-847d-4a5f-b897-d8e360ce5eaf" name="Bahnsteigsicherungsystem">
+          <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+              id="e1ccd78f-3c76-44e2-b81e-a8dc63c5b17f" name="StateMachine 1">
+            <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                id="29eb236f-d737-414e-94ec-c49d2353e09a" name="Default Region" involvedStates="#460d1fe4-7430-4d50-807e-0bb2e9357882 #2058e3fb-4b28-45b8-841a-0303a142ac6e #1760dd91-9c91-4052-a541-6ed9b20af16a #1c7feb45-fbb6-406c-abf5-a02cd2a8cd57 #72010ca7-c7c7-49c0-b29b-7f53b1423fe1 #6020a205-61ef-4784-bf01-7db6e68bc85c #5836d918-2a21-4d73-b8bc-54b4f3abed50 #6f13cfdd-c567-47f3-80be-a61692773b8c #f5a99f43-cdc0-47ee-93ec-5e0a054b3d24 #a8b5804d-91b5-4918-b34c-315cbb63eb7c #268ebfda-4402-4a29-acb5-d7bda56905a1 #b391ea2e-b706-4a78-b45b-8ba77e634c6f #3973da30-d246-425c-8a7a-e157c2aa49ee #cbc4bce6-baf6-468d-943c-b5e09fae8806 #d1230c7e-2efc-4a44-937f-f295eaa6df93 #0a438d16-66aa-4e55-b9a1-19ec067902cc #d1ca2fe3-06b7-4ac9-8aa4-0a76986a0328 #924e1f68-2b69-4c57-ba13-57ca1526ce30 #60e0f691-8f69-451b-a59b-87446d9e6ced #7ab95abd-1fc3-473b-a77e-f7769f1bbf55 #43f6ae50-b892-42ef-862c-09e4b7c93801">
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:InitialPseudoState"
+                  id="460d1fe4-7430-4d50-807e-0bb2e9357882" name="Start"/>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="2058e3fb-4b28-45b8-841a-0303a142ac6e" name="Aktualisierung der Komponenten">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="506a8761-9f05-476d-be8c-c6fd42310f6f" name="Bahnüberwachungssystem"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="1760dd91-9c91-4052-a541-6ed9b20af16a" name="Kommunikationen Umleiten">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="181fdf11-706d-4e09-9e7c-c9bda139017c" name="Kommunikationsmodul, Benutzeroberfläche"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="1c7feb45-fbb6-406c-abf5-a02cd2a8cd57" name="Fehlerinformationen Umleiten">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="78d2fd5a-1b17-464f-80d6-a4d53b1997f5" name="Kommunikationsmodul"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="72010ca7-c7c7-49c0-b29b-7f53b1423fe1" name="Selbstdiagnose ausführen">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="f5ffac56-af9a-481d-a097-8538540573c2" name="Überwachungssystem, Kommunikationsmodul"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="6020a205-61ef-4784-bf01-7db6e68bc85c" name="Gefahrenprüfung"
+                  summary="Steuerungseinheit">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="d7e5b146-19e5-4e5a-9a48-f45d365d46d7" name="Steuerungseinheit"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="5836d918-2a21-4d73-b8bc-54b4f3abed50" name="Mustererkenung von Gefahren">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="0ea9a61b-4a63-480d-9b92-07e74767fc88" name="Überwachungssytem, Sensoren"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="6f13cfdd-c567-47f3-80be-a61692773b8c" name="Umleitung von Gefahreninformationen"
+                  summary="Hier wird der IT-Facharbeiter über eine potenziele Gefahr benachichtigt, die dann von ihm kontroliert wird">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="8b695ec6-158d-4846-9cd0-1dc1f26f22ef" name="Kommunikationsmodul"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="f5a99f43-cdc0-47ee-93ec-5e0a054b3d24" name="Aktualisieren der Trainingsdaten">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="116c93a7-7212-49ff-a362-9cfc7c2aaeb8" name="Steuerungseinheit, Benutzeroberfläche, Überwachungssystem"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="a8b5804d-91b5-4918-b34c-315cbb63eb7c" name="Statistikinformationen Umleiten"
+                  summary="Kommunikationsmodul">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="837b2929-4de9-4736-8ebf-04f9c184631c" name="Kommunikationsmodul"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="268ebfda-4402-4a29-acb5-d7bda56905a1" name="Umweltprognose verabeiten">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="1e0a7391-30ff-4f97-aa27-a90819cdb809" name="Benutzeroberfläche"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="b391ea2e-b706-4a78-b45b-8ba77e634c6f" name="Aktualisieren der Systemdaten">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="e46cc6fb-f0f5-400c-8d04-88df2b4a1942" name="Bahnüberwachungssystem"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="3973da30-d246-425c-8a7a-e157c2aa49ee" name="Sicherheitszone überwachen"
+                  summary="Überwachungssystem">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="8b741b48-5168-48e0-aca9-39cd2c16201d" name="Überwachungssystem, Sensoren, Zugangskontrollsystem"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="cbc4bce6-baf6-468d-943c-b5e09fae8806" name="Umweltprognosen Umleiten">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="ff095af4-91eb-4fa7-9c39-488eea315c0d" name="Kommunikationsmodul"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:ChoicePseudoState"
+                  id="d1230c7e-2efc-4a44-937f-f295eaa6df93" name="Fall1"/>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:ChoicePseudoState"
+                  id="0a438d16-66aa-4e55-b9a1-19ec067902cc" name="Fall2"/>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="d1ca2fe3-06b7-4ac9-8aa4-0a76986a0328" name="Dokumententation abspeichern">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="43016952-137f-4dc6-bec9-d2747be2e053" name="Benutzeroberfläche"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="924e1f68-2b69-4c57-ba13-57ca1526ce30" name="Maßnahmen Umleiten">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="488877d7-d8f5-4d9f-9460-c2387723b36b" name="Überwachungssystem, Sensoren. Zugangskontrollsystem, Steuerungseinheit, Kommunikationsmodul"
+                    summary=""/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:ChoicePseudoState"
+                  id="60e0f691-8f69-451b-a59b-87446d9e6ced" name="Choice  19"/>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                  id="7ab95abd-1fc3-473b-a77e-f7769f1bbf55" name="Duchsage Kanal öffnen">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="c9e43fa1-0a59-4707-955c-c6f8dd1f314a" name="Alarmsystem"/>
+              </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:ChoicePseudoState"
+                  id="43f6ae50-b892-42ef-862c-09e4b7c93801" name="Choice  21"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="c71c33bb-ce15-4cc8-9596-f12e18b948d0" triggerDescription=""
+                  source="#460d1fe4-7430-4d50-807e-0bb2e9357882" target="#2058e3fb-4b28-45b8-841a-0303a142ac6e"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="154d7480-9942-4f68-98d1-1b62caa3f6bf" name="" triggerDescription=""
+                  source="#2058e3fb-4b28-45b8-841a-0303a142ac6e" target="#72010ca7-c7c7-49c0-b29b-7f53b1423fe1"
+                  triggers="#fd332fb8-9626-47c7-85e7-9ce4236c961b"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="4b65a566-af62-4cfb-a278-4227b2ab9d03" triggerDescription=""
+                  source="#2058e3fb-4b28-45b8-841a-0303a142ac6e" target="#5836d918-2a21-4d73-b8bc-54b4f3abed50"
+                  triggers="#d37a46f5-86df-4763-b466-79df1129f78c"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="a441f48b-7c5c-46c6-a5fe-faa4bfb5e455" triggerDescription=""
+                  source="#2058e3fb-4b28-45b8-841a-0303a142ac6e" target="#1760dd91-9c91-4052-a541-6ed9b20af16a"
+                  triggers="#c7d23be3-3740-420f-a476-cc460cdb9e14"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="d875d0db-5fb2-42e6-9fdc-5adccd7e1b76" name="" triggerDescription=""
+                  source="#2058e3fb-4b28-45b8-841a-0303a142ac6e" target="#3973da30-d246-425c-8a7a-e157c2aa49ee"
+                  triggers="#2cad4f21-b907-4f68-b0eb-6aabb0af84ea"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="47727edd-778d-4223-a502-75e942ed6258" triggerDescription=""
+                  source="#2058e3fb-4b28-45b8-841a-0303a142ac6e" target="#cbc4bce6-baf6-468d-943c-b5e09fae8806"
+                  triggers="#064c90f8-30de-4a55-a02c-b837f53c0f3f"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="baa138d9-0625-4481-8461-76652811ba30" triggerDescription=""
+                  source="#cbc4bce6-baf6-468d-943c-b5e09fae8806" target="#268ebfda-4402-4a29-acb5-d7bda56905a1"
+                  triggers="#ba08c884-1b80-435d-ac6d-8711575823df"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="f449204c-b740-4e1a-99ea-af545638d669" triggerDescription=""
+                  source="#268ebfda-4402-4a29-acb5-d7bda56905a1" target="#b391ea2e-b706-4a78-b45b-8ba77e634c6f"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="1bc3bea0-a52b-46dc-8104-3132c666fd32" triggerDescription=""
+                  source="#b391ea2e-b706-4a78-b45b-8ba77e634c6f" target="#2058e3fb-4b28-45b8-841a-0303a142ac6e"
+                  triggers="#d13e998e-d21e-4b6a-8b93-e2d6cd42d2c8"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="404c4cfc-7aaa-45d0-9761-7e7eeb26d6de" triggerDescription=""
+                  source="#5836d918-2a21-4d73-b8bc-54b4f3abed50" target="#d1230c7e-2efc-4a44-937f-f295eaa6df93"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="57f68b93-92ee-4a65-89ba-b632181fe70e" triggerDescription=""
+                  source="#d1230c7e-2efc-4a44-937f-f295eaa6df93" target="#6020a205-61ef-4784-bf01-7db6e68bc85c"
+                  triggers="#a5c5f6ed-534d-46df-a847-7d3a208ad4be"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="80780974-0533-486a-82de-75792da20f46" triggerDescription=""
+                  source="#d1230c7e-2efc-4a44-937f-f295eaa6df93" target="#5836d918-2a21-4d73-b8bc-54b4f3abed50"
+                  triggers="#9f6f39d2-3148-444b-a68b-5e2525c6bb2f"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="31abb623-f17b-47aa-868b-50c2f6358036" triggerDescription=""
+                  source="#6020a205-61ef-4784-bf01-7db6e68bc85c" target="#6f13cfdd-c567-47f3-80be-a61692773b8c"
+                  triggers="#434b19a1-d987-48ab-a4ae-486c0e1be6fe"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="caaaea17-e2f2-48a5-876f-49a196ee5ae4" triggerDescription=""
+                  source="#6f13cfdd-c567-47f3-80be-a61692773b8c" target="#f5a99f43-cdc0-47ee-93ec-5e0a054b3d24"
+                  triggers="#ade3ea51-e77d-4b0d-9c19-3d31869400b2"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="7c105e9f-932a-41e7-b7ba-f10ac09d2b0d" triggerDescription=""
+                  source="#f5a99f43-cdc0-47ee-93ec-5e0a054b3d24" target="#5836d918-2a21-4d73-b8bc-54b4f3abed50"
+                  triggers="#d13e998e-d21e-4b6a-8b93-e2d6cd42d2c8"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="aa9f1136-9bb6-4691-855c-07be386ad0c1" triggerDescription=""
+                  source="#1760dd91-9c91-4052-a541-6ed9b20af16a" target="#b391ea2e-b706-4a78-b45b-8ba77e634c6f"
+                  triggers="#93385398-9a38-403b-9d07-2e5762c7d8db"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="0744f1d3-0b12-4ba4-ac11-1569a06b430c" triggerDescription=""
+                  source="#6f13cfdd-c567-47f3-80be-a61692773b8c" target="#a8b5804d-91b5-4918-b34c-315cbb63eb7c"
+                  triggers="#036f3346-0050-4768-8c4a-b5464478d6fa"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="92b721ee-395a-4567-b43b-5f8a236b0554" summary="Nachdem alle Komponente kontrolliert wurden, wertet das System aus ob sich Fehler darunter befinden"
+                  triggerDescription="" source="#72010ca7-c7c7-49c0-b29b-7f53b1423fe1"
+                  target="#0a438d16-66aa-4e55-b9a1-19ec067902cc"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="eb48bc94-9b23-42e3-8c65-826ba17e0968" triggerDescription=""
+                  source="#0a438d16-66aa-4e55-b9a1-19ec067902cc" target="#1c7feb45-fbb6-406c-abf5-a02cd2a8cd57"
+                  triggers="#dcb92598-d6ec-4d7e-8273-922d3be73b3e"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="4f37a20d-5bf6-4600-8af8-1d8995a94515" triggerDescription=""
+                  source="#0a438d16-66aa-4e55-b9a1-19ec067902cc" target="#72010ca7-c7c7-49c0-b29b-7f53b1423fe1"
+                  triggers="#0c0bb7fa-37f7-4391-a82e-6bb79fcaac2f"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="e53da7f5-e957-4905-be2c-3aff7daefbbe" triggerDescription=""
+                  source="#1c7feb45-fbb6-406c-abf5-a02cd2a8cd57" target="#d1ca2fe3-06b7-4ac9-8aa4-0a76986a0328"
+                  triggers="#8b778d1f-b631-4dd5-970f-0dc4c2a6e548"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="029b0122-5512-4dd0-a88f-d42863bbc0f3" triggerDescription=""
+                  source="#d1ca2fe3-06b7-4ac9-8aa4-0a76986a0328" target="#b391ea2e-b706-4a78-b45b-8ba77e634c6f"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="72ef9aab-8c87-48cc-8a58-10609efd8571" triggerDescription=""
+                  source="#1c7feb45-fbb6-406c-abf5-a02cd2a8cd57" target="#a8b5804d-91b5-4918-b34c-315cbb63eb7c"
+                  triggers="#e9471370-bb25-42b3-a2f6-c1c13834c558"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="2694e6a0-e802-41b3-b739-5876bd46d4f5" triggerDescription=""
+                  source="#3973da30-d246-425c-8a7a-e157c2aa49ee" target="#60e0f691-8f69-451b-a59b-87446d9e6ced"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="55baf728-4be1-4648-b586-adc221b9f59e" triggerDescription=""
+                  source="#60e0f691-8f69-451b-a59b-87446d9e6ced" target="#924e1f68-2b69-4c57-ba13-57ca1526ce30"
+                  triggers="#1d9a5b4f-41db-48b2-8b1a-e95fa35709af"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="595fbea5-2bf5-442d-a550-5ff800dbd62f" triggerDescription=""
+                  source="#60e0f691-8f69-451b-a59b-87446d9e6ced" target="#3973da30-d246-425c-8a7a-e157c2aa49ee"
+                  triggers="#6e9f4ba0-704f-4341-b068-3c8804291237"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="487c8904-a633-4c4f-a1c3-183553d53e6b" triggerDescription=""
+                  source="#924e1f68-2b69-4c57-ba13-57ca1526ce30" target="#a8b5804d-91b5-4918-b34c-315cbb63eb7c"
+                  triggers="#51db2ecd-8a35-43f3-9b32-ed007d8386ae"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="d0a1f85e-bff3-42d4-81d4-aba5e5521552" triggerDescription=""
+                  source="#924e1f68-2b69-4c57-ba13-57ca1526ce30" target="#7ab95abd-1fc3-473b-a77e-f7769f1bbf55"
+                  triggers="#907e531c-32da-489f-89d9-b8144a1ee400"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="86d15f94-642e-4890-a4a5-eec6b0942f06" triggerDescription=""
+                  source="#7ab95abd-1fc3-473b-a77e-f7769f1bbf55" target="#43f6ae50-b892-42ef-862c-09e4b7c93801"/>
+            </ownedRegions>
+          </ownedStateMachines>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8895e706-869b-4b57-8e21-88c8a6648b72"
               name="Sensoren" abstractType="#758a1f6c-40ed-4cd0-b678-99ef4f847d6b"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1fa9e5db-99c0-4403-8307-69382deb345c"
