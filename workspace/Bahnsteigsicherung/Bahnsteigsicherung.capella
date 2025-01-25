@@ -17,6 +17,7 @@
     xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/7.0.0"
     xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/7.0.0"
     xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/7.0.0"
+    xmlns:org.polarsys.capella.core.data.pa.deployment="http://www.polarsys.org/capella/core/pa/deployment/7.0.0"
     id="d9c4b749-d3c0-43aa-be8e-a6c3ffab8cc5"
     name="Bahnsteigsicherung">
   <ownedExtensions xsi:type="libraries:ModelInformation" id="46053ff9-4db9-431d-82e7-1f7db913bbe2"/>
@@ -16383,6 +16384,42 @@
               name="Alarmsystem" abstractType="#82102479-4c13-4d49-8825-4e7a5630d60b"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e12a2728-3a03-49b3-b936-b6ffeaba510e"
               name="Zugangskontrollsystem" abstractType="#3a4e872c-5ffd-4583-b854-68421c182667"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b80d725a-1629-4af3-989c-df6477373658"
+              name="Server" abstractType="#02047b80-b320-48c1-811d-687961a00a7e">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="85a28fc6-176e-47b2-82cd-8976cc3e7827" deployedElement="#73a00d1a-010a-411d-9093-d3399d86df4a"
+                location="#b80d725a-1629-4af3-989c-df6477373658"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="eb07652a-181d-47eb-b8f8-e9aa8e436df2" deployedElement="#6c64846e-4b15-4f9e-85e7-fbd8666e0f7c"
+                location="#b80d725a-1629-4af3-989c-df6477373658"/>
+          </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="687b8005-483f-4c3e-8f18-9faca8231a0f"
+              name="Datenbank" abstractType="#46585bb8-5dbd-42f2-b087-f50af340210f">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="8cc8eb44-08c6-4a11-b2f6-53de90ae7904" deployedElement="#b1014ec9-55f1-4d3f-ac38-8c0a7e0b7782"
+                location="#687b8005-483f-4c3e-8f18-9faca8231a0f"/>
+          </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a35dda30-e7e7-45f6-a62c-64821b446355"
+              name="Erfassungsgerät" abstractType="#895ad2a3-066d-4998-b13f-c0cd65a7a3eb">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="f3e124ea-b984-4e39-8f74-9632ee7f696f" deployedElement="#c9d7aefc-7397-4d79-bfc8-86f6cf6562b8"
+                location="#a35dda30-e7e7-45f6-a62c-64821b446355"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="5cd0c36d-d849-4220-bae5-7b96d16c7b8d" deployedElement="#653dff88-a9ad-48a2-992b-a3be80160d78"
+                location="#a35dda30-e7e7-45f6-a62c-64821b446355"/>
+          </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1ebf8ac7-5da1-4351-ab30-8777297b2271"
+              name="Zugangsschranke" abstractType="#c30ece0b-0401-4d35-ad6e-bfac01278b8c">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="93bcb1d2-c94c-4d0b-a459-a0d78fc97f3c" deployedElement="#e12a2728-3a03-49b3-b936-b6ffeaba510e"
+                location="#1ebf8ac7-5da1-4351-ab30-8777297b2271"/>
+          </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="26289791-03b6-4c4d-befd-28d1f2267adf"
+              name="Sprechanlage" abstractType="#3d3f5b2f-5b46-47a0-a3d2-80b5d6122995">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="8ee71475-3a62-4b6f-ab8b-5b697dfaaebb" deployedElement="#e28f0d1e-8e39-42c3-8086-2a7db0418bb2"
+                location="#26289791-03b6-4c4d-befd-28d1f2267adf"/>
+          </ownedFeatures>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="00a72cc8-bb13-4600-9bbe-1ae839a53237" targetElement="#07a3ded0-847d-4a5f-b897-d8e360ce5eaf"
               sourceElement="#933c262c-5102-4754-b0ec-c7e2c80304bf"/>
@@ -16672,6 +16709,16 @@
                 id="40b21b9a-fac1-4028-88a5-ea019eeb6962" targetElement="#aceb7dd3-a937-48b5-97a1-67a9459a8f50"
                 sourceElement="#3a4e872c-5ffd-4583-b854-68421c182667"/>
           </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="02047b80-b320-48c1-811d-687961a00a7e" name="Server" nature="NODE"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="46585bb8-5dbd-42f2-b087-f50af340210f" name="Datenbank" nature="NODE"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="895ad2a3-066d-4998-b13f-c0cd65a7a3eb" name="Erfassungsgerät" nature="NODE"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="c30ece0b-0401-4d35-ad6e-bfac01278b8c" name="Zugangsschranke" nature="NODE"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="3d3f5b2f-5b46-47a0-a3d2-80b5d6122995" name="Sprechanlage" nature="NODE"/>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
             id="b95425be-460f-45e2-acaf-6f910385c9d0" name="Bahnüberwachungssystem"
